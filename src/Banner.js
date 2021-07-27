@@ -17,11 +17,13 @@ function Banner() {
 return str?.length>n ? str.substr(0,n-1)+"...":str;
     }
     return (
-       <header className="banner"
-        style={{
-            backgroundImage:`url("http://image.tmdb.org/t/p/original/${movie?.backdrop_path}")`,
-       backgroundSize:"Cover",
-       backgroundPosition:"center  center",}}>
+       <header 
+       className="banner"
+      style={{
+        backgroundSize: "cover",
+        backgroundImage: `url("https://image.tmdb.org/t/p/original/${movie?.backdrop_path}")`,
+        backgroundPosition: "center center",
+      }}>
 <div className="banner_content">
     <h1 className="baner_title">
 {movie?.title||movie?.name||movie.original_name}
